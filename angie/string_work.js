@@ -40,7 +40,19 @@ console.log('Number of Words', numberOfWords);
 // How many spaces are in the string?
 const numberOfSpaces = numberOfWords - 1;
 // What is the longest word in the string?
-// const longestWord =
+const startingWord = aString.split(' ');
+const lengthOfWords = startingWords.map(word => word.length);
+const maximumWordLength = max(lengthOfWords.indexOf
+const whereIsTheMax = lengthOfWords.indexOf(maximumWordLength);
+function max(listOfNums){
+  let maximum = listOfNums [0];
+  for(let num in listOfNums){
+    if(num > maximum){
+      maximum = num;
+    }
+  }
+  return num;
+}
 // How do I reverse a string?
 // not a space in the split! NOT A SPACE!
 const reverseString = aString.split('').reverse().join('');
